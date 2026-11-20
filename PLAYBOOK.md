@@ -5,17 +5,17 @@ Simple websites for local businesses that have only an Instagram page or a Googl
 
 | Package | Price | What's in it |
 |---|---|---|
-| Starter | ₹4,999 | 1 page, WhatsApp/call buttons, map, mobile-friendly |
-| Business | ₹9,999 | Up to 5 pages, menu/services, enquiry form, Google Business Profile setup |
+| Starter | ₹9,999 | 1 page, WhatsApp/call buttons, map, mobile-friendly |
+| Business | ₹17,999 | Up to 5 pages, menu/services, enquiry form, Google Business Profile setup |
 | Care plan | ₹999/month | Updates, offers, photos, hosting looked after |
 
 Terms: 50% upfront, 50% at launch. Up to 2 rounds of changes. The client buys the domain in their own name (about ₹800 to ₹1,200 a year). Hosting is free on GitHub Pages or Netlify.
 
-**Start cheaper for your first 2 or 3 clients** (₹2,500 to ₹3,500) in exchange for a testimonial and permission to show their site. Raise prices after that.
+**Minimum price is ₹10,000.** Don't discount. If a client pushes back, offer the Starter package or a 3-part payment (₹4,000 / ₹3,000 / ₹3,000) instead of lowering the price.
 
 ## Realistic numbers
 - Expect about 1 yes for every 20 to 30 businesses you genuinely talk to.
-- 3 sites a month at ₹7,000 average is about ₹21,000 a month, plus care plans that build up over time.
+- 2 sites a month at ₹10,000 to ₹18,000 is about ₹20,000 to ₹36,000 a month, plus care plans that build up over time.
 - The first client usually takes 2 to 4 weeks. Don't quit in week 2.
 
 ## Who to approach (in priority order)
