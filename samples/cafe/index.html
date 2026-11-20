@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chai &amp; Crumbs Cafe | Sample website</title>
+<meta name="description" content="Sample cafe website: menu, hours, location and WhatsApp ordering.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#fbf6ee;--ink:#2b1d14;--muted:#6f5b4b;--accent:#c4622d;--card:#fff;--line:#eadfce}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Inter,system-ui,sans-serif;background:var(--bg);color:var(--ink);line-height:1.6}
+a{color:inherit}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+.demo{background:var(--ink);color:#f3e6d4;text-align:center;font-size:13px;padding:6px 12px}
+nav{display:flex;justify-content:space-between;align-items:center;padding:18px 0}
+.logo{font-family:Fraunces,serif;font-weight:800;font-size:22px}
+nav ul{display:flex;gap:22px;list-style:none;font-size:15px}
+nav ul a{text-decoration:none;color:var(--muted)}
+.hero{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center;padding:40px 0 70px}
+h1{font-family:Fraunces,serif;font-size:clamp(38px,6vw,64px);line-height:1.05;font-weight:800}
+h1 em{color:var(--accent);font-style:normal}
+.hero p{color:var(--muted);font-size:18px;margin:18px 0 28px;max-width:46ch}
+.btn{display:inline-block;background:var(--accent);color:#fff;text-decoration:none;padding:13px 22px;border-radius:999px;font-weight:600}
+.btn.ghost{background:none;color:var(--ink);border:1.5px solid var(--ink);margin-left:10px}
+.art{aspect-ratio:1;border-radius:32px;background:radial-gradient(circle at 30% 30%,#f1c27d,#c4622d 60%,#7a3412);display:grid;place-items:center;font-size:120px;box-shadow:0 30px 60px -30px #7a3412}
+section{padding:60px 0;border-top:1px solid var(--line)}
+h2{font-family:Fraunces,serif;font-size:36px;margin-bottom:24px}
+.menu{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px}
+.item{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:20px}
+.item h3{display:flex;justify-content:space-between;font-size:17px}
+.item h3 span{color:var(--accent)}
+.item p{color:var(--muted);font-size:14px}
+.info{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:24px}
+.info div{background:var(--card);border-radius:18px;padding:22px;border:1px solid var(--line)}
+.info b{display:block;font-family:Fraunces,serif;font-size:20px;margin-bottom:6px}
+.reviews{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px}
+blockquote{background:var(--card);border-left:4px solid var(--accent);padding:18px 20px;border-radius:12px;color:var(--muted)}
+blockquote cite{display:block;margin-top:8px;font-style:normal;color:var(--ink);font-weight:600;font-size:14px}
+footer{padding:30px 0;color:var(--muted);font-size:14px;text-align:center}
+.wa{position:fixed;right:18px;bottom:18px;background:#25d366;color:#fff;text-decoration:none;padding:12px 18px;border-radius:999px;font-weight:600;box-shadow:0 8px 24px rgba(0,0,0,.2)}
+@media(max-width:760px){.hero{grid-template-columns:1fr}.art{max-width:320px;font-size:90px}nav ul{display:none}.btn.ghost{margin:10px 0 0}}
+</style>
+</head>
+<body>
+<div class="demo">Sample website made for a portfolio. Chai &amp; Crumbs is a fictional business.</div>
+<div class="wrap">
+<nav><div class="logo">Chai &amp; Crumbs</div>
+<ul><li><a href="#menu">Menu</a></li><li><a href="#visit">Visit</a></li><li><a href="#reviews">Reviews</a></li></ul></nav>
+<header class="hero">
+<div>
+<h1>Kadak chai,<br><em>fresh bakes</em>,<br>slow mornings.</h1>
+<p>A neighbourhood cafe serving masala chai, filter coffee and bakes made every morning. Order ahead on WhatsApp and skip the queue.</p>
+<a class="btn" href="#menu">See the menu</a><a class="btn ghost" href="#visit">Find us</a>
+</div>
+<div class="art" aria-hidden="true">☕</div>
+</header>
+<section id="menu">
+<h2>Today's menu</h2>
+<div class="menu">
+<div class="item"><h3>Masala chai <span>₹40</span></h3><p>Ginger, cardamom, slow-boiled with full-cream milk.</p></div>
+<div class="item"><h3>Filter coffee <span>₹60</span></h3><p>South Indian decoction, frothed the traditional way.</p></div>
+<div class="item"><h3>Bun maska <span>₹50</span></h3><p>Soft bun, generous butter, a pinch of sugar.</p></div>
+<div class="item"><h3>Paneer puff <span>₹45</span></h3><p>Flaky pastry with spiced paneer filling.</p></div>
+<div class="item"><h3>Banana walnut cake <span>₹90</span></h3><p>Baked every morning, best with chai.</p></div>
+<div class="item"><h3>Cold coffee <span>₹110</span></h3><p>Thick, chilled and lightly sweet.</p></div>
+</div>
+</section>
+<section id="visit">
+<h2>Visit us</h2>
+<div class="info">
+<div><b>Hours</b>Mon to Sat: 7 AM to 10 PM<br>Sunday: 8 AM to 9 PM</div>
+<div><b>Address</b>12 MG Road, near City Park<br>(your client's address here)</div>
+<div><b>Order ahead</b>Message us on WhatsApp and pick up in 10 minutes.</div>
+</div>
+</section>
+<section id="reviews">
+<h2>What regulars say</h2>
+<div class="reviews">
+<blockquote>"The best bun maska outside Pune. My daily stop before work."<cite>Sample review</cite></blockquote>
+<blockquote>"Cosy, quick and the chai is always right."<cite>Sample review</cite></blockquote>
+<blockquote>"WhatsApp ordering is a lifesaver on busy mornings."<cite>Sample review</cite></blockquote>
+</div>
+</section>
+<footer>© Chai &amp; Crumbs (sample) · Website by you</footer>
+</div>
+<a class="wa" href="#visit">💬 Order on WhatsApp</a>
+</body>
+</html>

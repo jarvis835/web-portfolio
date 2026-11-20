@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Websites for Local Businesses</title>
+<meta name="description" content="Simple, fast websites for cafes, clinics, salons and local shops. Live in 7 days.">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#ffffff;--ink:#111418;--muted:#5d6670;--accent:#3b5bfd;--soft:#f3f5fb;--line:#e4e8f0}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Inter,system-ui,sans-serif;background:var(--bg);color:var(--ink);line-height:1.6}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+nav{display:flex;justify-content:space-between;align-items:center;padding:20px 0}
+.logo{font-weight:800;font-size:18px}
+.cta{background:var(--ink);color:#fff;text-decoration:none;padding:10px 18px;border-radius:10px;font-weight:700;font-size:14px}
+.hero{padding:60px 0 50px;max-width:760px}
+h1{font-size:clamp(36px,6vw,60px);line-height:1.05;font-weight:800;letter-spacing:-1px}
+h1 span{color:var(--accent)}
+.hero p{color:var(--muted);font-size:19px;margin:20px 0 28px}
+.btn{display:inline-block;background:var(--accent);color:#fff;text-decoration:none;padding:14px 24px;border-radius:12px;font-weight:700}
+section{padding:50px 0}
+h2{font-size:30px;font-weight:800;margin-bottom:22px;letter-spacing:-.5px}
+.work{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px}
+.card{border:1px solid var(--line);border-radius:20px;overflow:hidden;text-decoration:none;color:inherit;transition:transform .15s}
+.card:hover{transform:translateY(-4px)}
+.thumb{height:170px;display:grid;place-items:center;font-size:60px}
+.t1{background:linear-gradient(135deg,#f1c27d,#c4622d)}.t2{background:linear-gradient(135deg,#bfeaea,#0b8a8f)}.t3{background:linear-gradient(135deg,#e7a6c1,#14101a)}
+.card div.body{padding:18px 20px}
+.card h3{font-size:18px}
+.card p{color:var(--muted);font-size:14px}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;counter-reset:s}
+.step{background:var(--soft);border-radius:18px;padding:22px}
+.step::before{counter-increment:s;content:counter(s);display:inline-grid;place-items:center;width:30px;height:30px;border-radius:50%;background:var(--accent);color:#fff;font-weight:700;margin-bottom:10px}
+.step p{color:var(--muted);font-size:14px}
+.plans{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:18px}
+.plan{border:1px solid var(--line);border-radius:20px;padding:26px}
+.plan.pop{border:2px solid var(--accent)}
+.plan b{font-size:32px;display:block;margin:6px 0}
+.plan ul{list-style:none;color:var(--muted);font-size:14px}
+.plan li{padding:5px 0}.plan li::before{content:"✓  ";color:var(--accent);font-weight:700}
+.contact{background:var(--ink);color:#fff;border-radius:24px;padding:44px;text-align:center}
+.contact p{color:#b8c0cc;margin:10px 0 24px}
+footer{padding:30px 0;color:var(--muted);font-size:13px;text-align:center}
+</style>
+</head>
+<body>
+<div class="wrap">
+<nav><div class="logo">Your Name · Web Studio</div><a class="cta" href="#contact">Get a free mock-up</a></nav>
+<header class="hero">
+<h1>Your customers search on Google.<br><span>Be there when they do.</span></h1>
+<p>I build simple, fast websites for cafes, clinics, salons and local shops. Mobile-friendly, WhatsApp button included, live in 7 days.</p>
+<a class="btn" href="#work">See sample work</a>
+</header>
+<section id="work">
+<h2>Sample work</h2>
+<div class="work">
+<a class="card" href="samples/cafe/"><div class="thumb t1">☕</div><div class="body"><h3>Cafe</h3><p>Menu, hours, location and order-on-WhatsApp button.</p></div></a>
+<a class="card" href="samples/clinic/"><div class="thumb t2">🦷</div><div class="body"><h3>Dental clinic</h3><p>Treatments, doctor profile, timings and appointment form.</p></div></a>
+<a class="card" href="samples/salon/"><div class="thumb t3">💇</div><div class="body"><h3>Salon</h3><p>Price list, festive offers, gallery and booking.</p></div></a>
+</div>
+</section>
+<section>
+<h2>How it works</h2>
+<div class="steps">
+<div class="step"><h3>Free mock-up</h3><p>I make a sample homepage for your business before you pay anything.</p></div>
+<div class="step"><h3>50% to start</h3><p>You like it, pay half, and send your photos, menu or price list.</p></div>
+<div class="step"><h3>Live in 7 days</h3><p>Your site goes live on your own domain, with up to 2 rounds of changes.</p></div>
+<div class="step"><h3>Ongoing care</h3><p>Optional monthly plan for updates, offers and new photos.</p></div>
+</div>
+</section>
+<section>
+<h2>Pricing</h2>
+<div class="plans">
+<div class="plan"><h3>Starter</h3><b>₹4,999</b><ul><li>1-page website</li><li>WhatsApp + call buttons</li><li>Google Maps location</li><li>Mobile friendly</li></ul></div>
+<div class="plan pop"><h3>Business</h3><b>₹9,999</b><ul><li>Up to 5 pages</li><li>Menu / services / price list</li><li>Enquiry or booking form</li><li>Google Business Profile setup</li></ul></div>
+<div class="plan"><h3>Care plan</h3><b>₹999/mo</b><ul><li>Monthly updates and offers</li><li>New photos and prices</li><li>Domain and hosting looked after</li></ul></div>
+</div>
+<p style="color:var(--muted);font-size:13px;margin-top:12px">Domain name (about ₹800 to ₹1,200 a year) is bought in the client's name and paid by them.</p>
+</section>
+<section id="contact">
+<div class="contact">
+<h2>Want a free mock-up of your website?</h2>
+<p>Send your business name and area. I'll reply with a sample homepage within 48 hours.</p>
+<a class="btn" href="mailto:you@example.com">Message me</a>
+</div>
+</section>
+<footer>Sample businesses shown are fictional and made for this portfolio.</footer>
+</div>
+</body>
+</html>
