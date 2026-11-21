@@ -1,66 +1,52 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="robots" content="noindex">
 <title>Hustle Fitness | Website preview</title>
-<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#0d0f12;--ink:#f3f4f6;--muted:#a3a9b3;--accent:#c6ff2e;--card:#171a1f;--line:rgba(255,255,255,.1)}
+/* Type logic: display Barlow Condensed for the idea, body for reading, mono for labels. Scale ratio 1.25 from 18px. Rating is set as a giant numeral: data as typography. */
+:root{--bg:#0c0e11;--ink:#f3f4f6;--mut:#a1a8b3;--acc:#c6ff2e;--card:#171a1f;--line:rgba(255,255,255,.12);--disp:'Barlow Condensed',sans-serif;--body:Inter,sans-serif}
 *{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}
-body{font-family:Inter,system-ui,sans-serif;background:var(--bg);color:var(--ink);line-height:1.6}
-a{color:inherit}.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
-.demo{background:var(--accent);color:#111;text-align:center;font-size:13px;padding:7px 12px;position:relative;z-index:5;font-weight:500}
-.hero{position:relative;min-height:88vh;display:flex;flex-direction:column;background:#000}
-.hero .bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.5}
-.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.4) 0%,var(--bg) 100%)}
-.hero>*{position:relative;z-index:2}
-nav{display:flex;justify-content:space-between;align-items:center;padding:22px 0;gap:12px}
-.logo{font-family:"Barlow Condensed",sans-serif;font-size:30px;font-weight:800;text-transform:uppercase;letter-spacing:1px}
-.book{background:var(--accent);color:#111;text-decoration:none;padding:10px 20px;border-radius:8px;font-size:14px;font-weight:700;white-space:nowrap}
-.hero-body{margin:auto 0;padding:40px 0 70px;max-width:760px}
-.hero small{color:var(--accent);letter-spacing:3px;text-transform:uppercase;font-size:12px;font-weight:700}
-h1{font-family:"Barlow Condensed",sans-serif;text-transform:uppercase;font-size:clamp(52px,9vw,104px);line-height:.95;margin:12px 0 18px;font-weight:800}
-h1 em{color:var(--accent);font-style:normal}
-.hero p{color:#dfe2e7;font-size:18px;max-width:52ch;margin-bottom:26px}
-.chips{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:28px}
-.chip{background:rgba(255,255,255,.1);backdrop-filter:blur(6px);border:1px solid var(--line);border-radius:999px;padding:7px 15px;font-size:14px}.chip b{color:var(--accent)}
-.btn{display:inline-block;background:var(--accent);color:#111;text-decoration:none;padding:15px 28px;border-radius:8px;font-weight:700}
-.btn.ghost{background:none;color:var(--ink);border:1.5px solid var(--ink);margin-left:10px}
-section{padding:64px 0}
-h2{font-family:"Barlow Condensed",sans-serif;text-transform:uppercase;font-size:clamp(34px,5vw,50px);margin-bottom:26px;font-weight:800}
-.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
-.gallery .ph{border-radius:14px;overflow:hidden;background:var(--card);aspect-ratio:4/5}
-.gallery .ph:first-child{grid-column:span 2;aspect-ratio:auto}
-.gallery img{width:100%;height:100%;object-fit:cover;display:block}
-.plans{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
-.plan{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:26px}
-.plan h3{font-family:"Barlow Condensed",sans-serif;font-size:26px;text-transform:uppercase}.plan b{display:block;color:var(--accent);font-size:28px;margin:6px 0}
-.plan ul{list-style:none;color:var(--muted);font-size:14px}.plan li{padding:4px 0}.plan li::before{content:"+ ";color:var(--accent);font-weight:700}
-.note{color:var(--muted);font-size:13px;margin-top:12px}
-.info{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:18px}
-.info div{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:24px}.info b{display:block;color:var(--accent);margin-bottom:6px}
-.info a{color:var(--accent)}
-footer{padding:36px 0;color:var(--muted);font-size:13px;text-align:center;border-top:1px solid var(--line);margin-top:20px}
-.wa{position:fixed;right:16px;bottom:16px;z-index:9;background:#25d366;color:#fff;text-decoration:none;padding:13px 20px;border-radius:999px;font-weight:700;box-shadow:0 8px 24px rgba(0,0,0,.35)}
-@media(max-width:700px){.gallery{grid-template-columns:1fr 1fr}.gallery .ph:first-child{grid-column:span 2;aspect-ratio:4/3}.btn.ghost{margin:10px 0 0}.hero{min-height:80vh}}
+body{background:var(--bg);color:var(--ink);font:400 18px/1.6 var(--body);-webkit-font-smoothing:antialiased}
+a{color:inherit}.wrap{max-width:1160px;margin:0 auto;padding:0 24px}
+.label{font:500 12px/1 "JetBrains Mono",monospace;letter-spacing:.14em;text-transform:uppercase;color:var(--mut)}
+.demo{background:var(--acc);color:#111;text-align:center;font:500 13px/1.4 var(--body);padding:8px 12px}
+.hero{position:relative;color:#fff;background:#000 url('https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Tlvzi_vNq4H13PO5VmQrrTF-hI8UP1swmyj712s1m5O0A0a8rEVW4XdoCOnKQTCJ0BQjMYImUdIdHKtuz7WfxTLgfCQrOntSQvanvElmNlU1q7fPa-XUvZsz812qxnY5UMfbz7CYXM-kBv=w1600') center/cover;}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.45),rgba(0,0,0,.82))}
+.hero>.wrap{position:relative;z-index:2}
+nav{display:flex;justify-content:space-between;align-items:center;padding:24px 0;gap:12px}
+.mark{font:800 24px/1 var(--disp);letter-spacing:-.01em}
+.cta{background:var(--acc);color:#111;text-decoration:none;padding:12px 22px;border-radius:8px;font:600 14px/1 var(--body);white-space:nowrap}
+.hbody{padding:clamp(40px,9vw,130px) 0 clamp(48px,8vw,110px);max-width:980px}
+h1{font:800 clamp(48px,10.5vw,148px)/.92 var(--disp);letter-spacing:-.01em;margin:20px 0 28px}
+h1 em{font-style:normal;color:var(--acc);font-weight:800}
+.lead{font-size:clamp(19px,2.2vw,24px);line-height:1.45;max-width:30em;opacity:.92}
+.ctas{display:flex;gap:14px;flex-wrap:wrap;margin-top:30px;align-items:center}
+.ghost{font:600 15px/1 var(--body);text-decoration:none;border-bottom:2px solid var(--acc);padding-bottom:4px}
+.proof{display:grid;grid-template-columns:auto 1fr;gap:32px;align-items:end;padding:56px 0;border-bottom:1px solid var(--line)}
+.num{font:800 clamp(96px,17vw,220px)/.8 var(--disp);letter-spacing:-.05em;color:var(--acc)}
+.proof p{font:500 clamp(20px,2.6vw,30px)/1.3 var(--disp);letter-spacing:-.01em;max-width:18em}
+.row{display:grid;grid-template-columns:200px 1fr;gap:32px;padding:56px 0;border-bottom:1px solid var(--line)}
+h2{font:800 clamp(32px,4.8vw,58px)/1.02 var(--disp);letter-spacing:-.01em;margin-bottom:28px;max-width:13em}
+.svc{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:0 36px}
+.svc div{padding:20px 0;border-top:1px solid var(--line)}.svc b{display:block;font:800 24px/1.15 var(--disp);letter-spacing:-.01em;margin-bottom:4px}.svc span{color:var(--mut);font-size:16px}
+.gal{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:12px}.ph{border-radius:12px;overflow:hidden;aspect-ratio:4/3;background:var(--card)}.ph img{width:100%;height:100%;object-fit:cover;display:block}
+.note{color:var(--mut);font-size:13px;margin-top:14px}.note a{color:var(--acc);font-weight:600}
+.info{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:16px}.info div{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:24px}.info b{display:block;font:500 12px/1 "JetBrains Mono",monospace;letter-spacing:.14em;text-transform:uppercase;color:var(--acc);margin-bottom:10px}.info a{color:var(--acc);font-weight:600}
+footer{padding:34px 0;color:var(--mut);font-size:13px;text-align:center}
+.wa{position:fixed;right:16px;bottom:16px;z-index:9;background:#25d366;color:#fff;text-decoration:none;padding:13px 20px;border-radius:999px;font:700 15px/1 var(--body);box-shadow:0 8px 24px rgba(0,0,0,.3)}
+@media(max-width:760px){.row{grid-template-columns:1fr;gap:12px;padding:40px 0}.proof{grid-template-columns:1fr;gap:18px}}
 </style></head><body>
 <div class="demo">Free website preview made for Hustle Fitness by Relatable Studio. Not the official site yet.</div>
-<header class="hero"><img class="bg" src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Tlvzi_vNq4H13PO5VmQrrTF-hI8UP1swmyj712s1m5O0A0a8rEVW4XdoCOnKQTCJ0BQjMYImUdIdHKtuz7WfxTLgfCQrOntSQvanvElmNlU1q7fPa-XUvZsz812qxnY5UMfbz7CYXM-kBv=w1200" alt="" onerror="this.remove()">
-<div class="wrap" style="display:flex;flex-direction:column;flex:1">
-<nav><div class="logo">Hustle Fitness</div><a class="book" href="https://wa.me/917795891717?text=Hi%2C%20I%27d%20like%20a%20free%20trial">Join on WhatsApp</a></nav>
-<div class="hero-body"><small>Gym &middot; HSR Layout, Sector 7</small>
-<h1>Show up.<br><em>Get stronger.</em></h1>
-<div class="chips"><span class="chip"><b>&#9733; 4.9</b> on Google</span><span class="chip">44 reviews</span></div>
-<p>Train at Hustle Fitness in HSR Layout, Sector 7. See the gym, check membership plans and book a free trial session on WhatsApp.</p>
-<a class="btn" href="https://wa.me/917795891717?text=Hi%2C%20I%27d%20like%20a%20free%20trial">Book a free trial</a><a class="btn ghost" href="#gym">See the gym</a></div></div></header>
-<section id="gym"><div class="wrap"><h2>Inside the gym</h2>
-<div class="gallery"><div class="ph"><img loading="lazy" src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Tlvzi_vNq4H13PO5VmQrrTF-hI8UP1swmyj712s1m5O0A0a8rEVW4XdoCOnKQTCJ0BQjMYImUdIdHKtuz7WfxTLgfCQrOntSQvanvElmNlU1q7fPa-XUvZsz812qxnY5UMfbz7CYXM-kBv=w1200" alt="Hustle Fitness" onerror="this.parentNode.remove()"></div><div class="ph"><img loading="lazy" src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Tyr8n6LcdtXUQOIzWluL25dGkGMmA-BZ-a1IH89ofyRYpC5dwXXj4zzeg-7uJelC6f6qsmDJvTw1r5llGURFVjV9wkmeqD9PQTBC9L0J1nI1-ETm3ifEdLD3okoKJDV1aZpieTK1DBW4I=w1200" alt="Hustle Fitness" onerror="this.parentNode.remove()"></div><div class="ph"><img loading="lazy" src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SHb5Dt_j0_VJaYqV7sd_PjZQzljBt3we0gMajS2Wu_hGRvH9rdAWjeW9cqJh8V-k4QwWNURLzRgWDWI65uakcbSB4UrfTHPsTnboZ4azhOcR47-n8yaScbQa8qJwRob9gFLHLpvRllaus=w1200" alt="Hustle Fitness" onerror="this.parentNode.remove()"></div><div class="ph"><img loading="lazy" src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SbhToovfl25Pa7A-BDcNciUBjFq9AdOZK2JI3L7pwC5cD4Hf_Zu50GJyac7VoSrToZNCuWZFOPPU57kXr8rvfVKCFkln6EYQTaBs8vgO3vDGItRj9Qk2q3C8-7KCydo8lCqogjTLYOvb6v=w1200" alt="Hustle Fitness" onerror="this.parentNode.remove()"></div></div>
-<p class="note">Photos from the gym's Google listing. <a href="https://www.google.com/maps/search/?api=1&amp;query=Hustle+Fitness+HSR+Layout" style="color:var(--accent)">See all photos and reviews on Google Maps</a></p></div></section>
-<section id="plans"><div class="wrap"><h2>Membership plans</h2>
-<div class="plans"><div class="plan"><h3>Monthly</h3><b>&#8377; &mdash;</b><ul><li>Full gym access</li><li>Trainer guidance</li></ul></div>
-<div class="plan"><h3>Quarterly</h3><b>&#8377; &mdash;</b><ul><li>Full gym access</li><li>Diet tips</li></ul></div>
-<div class="plan"><h3>Annual</h3><b>&#8377; &mdash;</b><ul><li>Best value</li><li>Personal plan</li></ul></div></div>
-<p class="note">Your real fees go here. Send a photo of your rate card and it's updated in minutes.</p></div></section>
-<section id="visit"><div class="wrap"><h2>Visit us</h2><div class="info">
-<div><b>Address</b>3rd Floor, No. 991 &amp; 992, 5th Main Rd, 7th Sector, HSR Layout, Bengaluru 560102<br><a href="https://www.google.com/maps/search/?api=1&amp;query=Hustle+Fitness+HSR+Layout">Open in Google Maps &rarr;</a></div>
-<div><b>Call or WhatsApp</b>+91 077958 91717</div></div></div></section>
+<header class="hero"><div class="wrap">
+<nav><div class="mark">Hustle Fitness</div><a class="cta" href="https://wa.me/917795891717?text=Hi%2C%20I%27d%20like%20a%20free%20trial">Book a free trial</a></nav>
+<div class="hbody"><div class="label" style="color:inherit;opacity:.8">Gym &middot; HSR Layout, Sector 7</div>
+<h1>SHOW UP.<br><em>HUSTLE.</em></h1><p class="lead">A third-floor gym on 5th Main, 7th Sector. Book a free trial on WhatsApp.</p>
+<div class="ctas"><a class="cta" href="https://wa.me/917795891717?text=Hi%2C%20I%27d%20like%20a%20free%20trial">Book a free trial</a><a class="ghost" href="#visit">Find us</a></div></div></div></header>
+<div class="wrap">
+<section class="proof"><div class="num">4.9</div><p>44 reviews on Google. Rated by the people who train here.</p></section>
+<section class="row"><div class="label">01 / What we do</div><div><div class="svc"><div><b>Strength floor</b><span>Racks, machines, free weights</span></div><div><b>Training</b><span>Programs and coaching</span></div><div><b>Free trial</b><span>Walk in and try us</span></div><div><b>Membership</b><span>Monthly, quarterly, annual</span></div></div><p class="note">Your real membership plans goes here. Send a photo and it's updated in minutes.</p></div></section>
+<section class="row"><div class="label">02 / Inside</div><div><div class="gal"><div class="ph"><img loading="lazy" src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Tyr8n6LcdtXUQOIzWluL25dGkGMmA-BZ-a1IH89ofyRYpC5dwXXj4zzeg-7uJelC6f6qsmDJvTw1r5llGURFVjV9wkmeqD9PQTBC9L0J1nI1-ETm3ifEdLD3okoKJDV1aZpieTK1DBW4I=w1200" alt="" onerror="this.parentNode.remove()"></div><div class="ph"><img loading="lazy" src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SHb5Dt_j0_VJaYqV7sd_PjZQzljBt3we0gMajS2Wu_hGRvH9rdAWjeW9cqJh8V-k4QwWNURLzRgWDWI65uakcbSB4UrfTHPsTnboZ4azhOcR47-n8yaScbQa8qJwRob9gFLHLpvRllaus=w1200" alt="" onerror="this.parentNode.remove()"></div><div class="ph"><img loading="lazy" src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SbhToovfl25Pa7A-BDcNciUBjFq9AdOZK2JI3L7pwC5cD4Hf_Zu50GJyac7VoSrToZNCuWZFOPPU57kXr8rvfVKCFkln6EYQTaBs8vgO3vDGItRj9Qk2q3C8-7KCydo8lCqogjTLYOvb6v=w1200" alt="" onerror="this.parentNode.remove()"></div></div><p class="note">Photos from the Google listing. <a href="https://www.google.com/maps/search/?api=1&amp;query=Hustle+Fitness+HSR+Layout,+Sector+7">See all photos and reviews on Google Maps</a></p></div></section>
+<section class="row" id="visit"><div class="label">03 / Visit</div><div class="info"><div><b>Address</b>3rd Floor, No. 991 &amp; 992, 5th Main Rd, 7th Sector, HSR Layout, Bengaluru 560102<br><a href="https://www.google.com/maps/search/?api=1&amp;query=Hustle+Fitness+HSR+Layout,+Sector+7">Open in Google Maps &rarr;</a></div><div><b>Call or WhatsApp</b>+91 77958 91717</div></div></section>
+</div>
 <footer>Preview by Relatable Studio &middot; Want this live on your own domain? WhatsApp +91 78991 51775</footer>
-<a class="wa" href="https://wa.me/917795891717?text=Hi%2C%20I%27d%20like%20a%20free%20trial">&#128172; Join on WhatsApp</a>
+<a class="wa" href="https://wa.me/917795891717?text=Hi%2C%20I%27d%20like%20a%20free%20trial">&#128172; WhatsApp</a>
 </body></html>
